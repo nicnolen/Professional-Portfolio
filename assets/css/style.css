@@ -1,0 +1,50 @@
+/* Universal Selectors */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+/* colors for the page */
+:root {
+    --primary-color: #7ef2ff;
+    --secondary-color: #474747;
+}
+
+/* SiteWide Styles */
+/* Style the Header */
+header {
+    background-color: var(--secondary-color);
+    position: relative;
+}
+
+header h1 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    position: absolute;
+}
+/* Utility Classes */
+
+/* Specific Classes */
+/* Style the Hero */ 
+.hero {
+    padding: 60px;
+    background-image: url(../images/Nic\ Professional\ Picture.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vw;
+    position: relative;
+}
+
+.hero h2 {
+    background-color: var(--primary-color);
+    position: absolute;
+    
+
+}
+/* Unique Id's */
+
+/* Media Queries */
+
