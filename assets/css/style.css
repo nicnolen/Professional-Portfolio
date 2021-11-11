@@ -13,34 +13,48 @@
     --tertiary-color: rgb(255, 0, 0);
 }
 
+/* Body Color */
+body {
+    background-color: var(--primary-color);
+}
+
 /* SiteWide Styles */
 /* Style the Header */
-/* Style the Title Bar */
-.title-bar {
+header {
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--secondary-color);
 } /* Makes the header and nav (block elements) inline elements and spaces them apart equally */
 
 /* Style My Name */
-.name {
+header h1 {
     background-color: var(--primary-color);
     color: rgba(255, 0, 0, 0.73);
+    padding: 10px;
 }
+
 /* Style the Navigation Links */
 .nav-links {
-    list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-size: 1.3vw;
 }
 
 .nav-links li {
     padding: 10px;
+    background-color: var(--primary-color);
 }
 
 .nav-links li a {
-    color: var(--primary-color);
+    color: var(--tertiary-color);
     text-decoration: none;
+    font-weight: lighter;
+    font-size: 1.2vw;
 }
 
 .nav-links li a:hover {
@@ -49,7 +63,6 @@
 /* Utility Classes */
 
 /* Specific Classes */
-
 /* Style the Hero */ 
 .hero {
     background-image: url(../images/bg-img.jpg);
