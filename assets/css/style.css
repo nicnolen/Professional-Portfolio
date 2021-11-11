@@ -15,22 +15,40 @@ Universal Selectors
 
 /* SiteWide Styles */
 /* Style the Header */
-header {
+/* Style the Title Bar */
+.title-bar {
+    display: flex;
+    justify-content: space-between;
     background-color: var(--secondary-color);
-    
-}
+} /* Makes the header and nav (block elements) inline elements and spaces them apart equally */
 
-header h1 {
+/* Style My Name */
+.name {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
+/* Style the Navigation Links */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
 
-header a {
+.nav-links li {
+    padding: 10px;
+}
+
+.nav-links li a {
     color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: rgb(33, 165, 33);
 }
 /* Utility Classes */
 
 /* Specific Classes */
+
 /* Style the Hero */ 
 .hero {
     background-image: url(../images/bg-img.jpg);
