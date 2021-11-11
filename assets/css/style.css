@@ -10,6 +10,7 @@
 :root {
     --primary-color: #7ef2ff;
     --secondary-color: #474747;
+    --tertiary-color: rgb(255, 0, 0);
 }
 
 /* SiteWide Styles */
@@ -17,12 +18,21 @@
 header {
     background-color: var(--secondary-color);
     position: relative;
+    padding: 20px 35px;
 }
 
 header h1 {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+header a {
+    color: var(--primary-color);
+    float: right;
 }
 /* Utility Classes */
 
@@ -30,21 +40,38 @@ header h1 {
 /* Style the Hero */ 
 .hero {
     padding: 60px;
-    background-image: url(../images/Nic\ Professional\ Picture.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url(../images/bg-img.jpg);
+    background-size: cover;
     background-position: center;
     height: 20vw;
     position: relative;
 }
 
-.hero h2 {
-    background-color: var(--primary-color);
+.hero figure img {
+    height: 300px;
     position: absolute;
-    
+}
 
+.hero h2 {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
 }
 /* Unique Id's */
 
-/* Media Queries */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
 
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    
+}
