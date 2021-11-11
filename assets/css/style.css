@@ -1,4 +1,4 @@
-Universal Selectors
+/* Universal Selectors */
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +17,7 @@ Universal Selectors
 /* Style the Header */
 /* Style the Title Bar */
 .title-bar {
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     background-color: var(--secondary-color);
@@ -25,7 +26,7 @@ Universal Selectors
 /* Style My Name */
 .name {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: rgba(255, 0, 0, 0.73);
 }
 /* Style the Navigation Links */
 .nav-links {
