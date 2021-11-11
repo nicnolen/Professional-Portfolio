@@ -1,4 +1,4 @@
-/* Universal Selectors */
+Universal Selectors
 * {
     margin: 0;
     padding: 0;
@@ -17,47 +17,30 @@
 /* Style the Header */
 header {
     background-color: var(--secondary-color);
-    position: relative;
-    padding: 20px 35px;
+    
 }
 
 header h1 {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    top: 0;
 }
 
 header a {
     color: var(--primary-color);
-    float: right;
 }
 /* Utility Classes */
 
 /* Specific Classes */
 /* Style the Hero */ 
 .hero {
-    padding: 60px;
     background-image: url(../images/bg-img.jpg);
     background-size: cover;
     background-position: center;
-    height: 20vw;
-    position: relative;
-}
-
-.hero figure img {
-    height: 300px;
-    position: absolute;
 }
 
 .hero h2 {
     background-color: var(--tertiary-color);
     color: var(--secondary-color);
-    position: absolute;
-    right: 30px;
-    bottom: 0px;
 }
 /* Unique Id's */
 

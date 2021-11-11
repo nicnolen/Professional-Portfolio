@@ -1,37 +1,58 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <title>Nicholas Nolen: Professional Portfolio</title>
+    <style>
+        .title-bar {
+            display: flex;
+            justify-content: space-between;
+        }
 
-    <link rel="stylesheet" href="assets/css/style.css" />
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            padding: 10px;
+            color: black;
+        }
+
+        .nav-links li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .nav-links li a:hover {
+            color: #7ef2ff;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Nicholas Nolen</h1>
-        <nav>
-            <ul>
-                <a href="#about-me">About Me</a>
-                <a href="#work">Work</a>
-                <a href="#contact-me">Contact Me</a>
-            </ul>
-        </nav>
-    </header>
-    <!-- Hero with subtitle -->
-    <section class="hero">
-        <figure>
-            <img src="assets/images/Nic Professional Picture.png" alt="Nicholas Nolen's professional looking headshot" />
-        </figure>
-        <div class="hero-subtitle">
-            <h2>Full Stack Web Developer</h2>
-        </div>
-    </section>
-    <main>
-        <article id="about-me">
+    <div class="main" style="background-color: #7ef2ff;">
+        <header class="title-bar" style="background-color: purple">
+            <h1 class="name">Nicholas Nolen</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about-me"><h2>About Me</h2></a></li>
+                    <li><a href="#work"><h2>Work</h2></a></li>
+                    <li><a href="#contact-me"><h2>Contact Me</h2></a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <figure>
+                <img src="assets/images/Nic Professional Picture.png" alt="Nicholas Nolen's professional looking headshot" />
+            </figure>
+            <div class="hero-subtitle">
+                <h2>Full Stack Web Developer</h2>
+            </div>
+        </section>
+        <section id="about-me">
             <div class="article-title">
                 <h2>About Me</h2>
             </div>
@@ -40,26 +61,27 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe iure accusantium officiis, perferendis ex aspernatur ipsum dicta earum voluptatibus placeat totam consequuntur est, labore cupiditate alias neque enim. Natus, fugit?
                 </p>
             </div>
-        </article>
-        <article id="work">
+        </section>
+        <section id="work">
             <div class="article-title">
                 <h2>Work</h2>
             </div>
             <div class="work">
 
             </div>
-        </article>
-    </main>
-    <footer id="contact-me">
-        <div class="article-title">
-            <h2>Contact Me</h2>
-        </div>
+        </section>
 
-        <address>
-            512-496-3795
-            <a href="mailto:nicnolen@ymail.com">nicnolen@ymail.com</a>
-            <a href="https://github.com/nicnolen">Github</a>
-        </address>
-    </footer>
+        <footer id="contact-me">
+            <div class="article-title">
+                <h2>Contact Me</h2>
+            </div>
+        
+            <address>
+                512-496-3795
+                <a href="mailto:nicnolen@ymail.com">nicnolen@ymail.com</a>
+                <a href="https://github.com/nicnolen">Github</a>
+            </address>
+        </footer>
+    </div>
 </body>
 </html>
