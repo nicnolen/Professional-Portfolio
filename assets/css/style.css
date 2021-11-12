@@ -23,11 +23,13 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    padding: 20px;
+    font-size: 40px;
+    padding: 20px 20px 10px 20px;
+    margin: 10px;
     border-bottom: 3px solid var(--secondary-color);
-    margin: 10px
+    text-align: center;
 }
+
 /* SiteWide Styles */
 /* Style the Header */
 header {
@@ -120,17 +122,17 @@ header h1 {
     align-content: center;
     color: rgba(234, 106, 71, 0.81);
     text-align: center;
-    padding-bottom: 20px;
     text-align: center;
-    margin: 0 auto 5px auto;
+    margin: 0 auto 50px auto;
     width: 50%;
-    font-size: 20px;
+    font-size: 40px;
+    border-bottom: 3px solid #dbae58;
     
 }
 .about-info {
     color: #000000;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
