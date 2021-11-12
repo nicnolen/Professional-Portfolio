@@ -13,7 +13,6 @@
     --tertiary-color: rgb(255, 0, 0);
 }
 
-/* Body Color */
 body {
     background-color: var(--primary-color);
 }
@@ -97,6 +96,9 @@ header h1 {
     flex-wrap: wrap;
     height: 20vw;
 }
+
+/* Style the About Me */
+
 
 /* Style the Projects */
 /* Main Project */
