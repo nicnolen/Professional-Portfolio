@@ -8,56 +8,207 @@
 /* General Styles */
 /* colors for the page */
 :root {
-    --primary-color: #7ef2ff;
+    --primary-color: #0091d5;
     --secondary-color: #474747;
-    --tertiary-color: rgb(255, 0, 0);
+    --tertiary-color: #ea6a47;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.section-title {
+    color: #dbae58;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding: 20px 20px 10px 20px;
+    margin: 10px;
+    border-bottom: 3px solid var(--secondary-color);
+    text-align: center;
 }
 
 /* SiteWide Styles */
 /* Style the Header */
 header {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
     background-color: var(--secondary-color);
-    position: relative;
-    padding: 20px 35px;
-}
+} /* Makes the header and nav (block elements) inline elements and spaces them apart equally */
 
+/* Style My Name */
 header h1 {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    top: 0;
+    color: rgba(234, 106, 71, 0.80);
+    padding: 10px;
+    font-size: 40px;
 }
 
-header a {
-    color: var(--primary-color);
-    float: right;
+/* Style the Navigation Links */
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-links li {
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+
+.nav-links li a {
+    color: rgba(234, 106, 71, 0.80);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links li a:hover {
+    color: #b3c100;
 }
 /* Utility Classes */
+.flex-row {
+    display: flex;
+}
 
 /* Specific Classes */
 /* Style the Hero */ 
 .hero {
-    padding: 60px;
     background-image: url(../images/bg-img.jpg);
     background-size: cover;
     background-position: center;
-    height: 20vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     position: relative;
 }
 
-.hero figure img {
-    height: 300px;
+.hero-subtitle {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
-.hero h2 {
+.hero-subtitle h2 {
+    background-color: rgb(255, 0, 0);
+    color: var(--secondary-color);
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 20vw;
+}
+
+/* Style the About Me Section */
+.about-intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    color: rgba(234, 106, 71, 0.81);
+    text-align: center;
+    text-align: center;
+    margin: 0 auto 50px auto;
+    width: 50%;
+    font-size: 40px;
+    border-bottom: 3px solid #dbae58;
+    
+}
+.about-info {
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 20px 100px 20px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Style the Work Section */
+/* Main Project */
+.primary-project {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 0 20px 0 20px;
+    padding-bottom: 50px;
+}
+
+.primary-project img {
+    max-width: 100%;
+}
+
+.primary-info {
     background-color: var(--tertiary-color);
     color: var(--secondary-color);
     position: absolute;
-    right: 30px;
-    bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 4vw;
+}
+
+.primary-info h3 {
+    font-size: 2.4vw;
+}
+
+.primary-info h4 {
+    font-size: 1vw;
+}
+
+
+/* Secondary Projects */
+.secondary-project {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 0 20px 0 20px;
+    padding-bottom: 50px;
+}
+
+.secondary-project img {
+    max-width: 20%;
+}
+
+.secondary-info {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 2vw;
+}
+
+.secondary-info h3 {
+    font-size: 1vw;
 }
 /* Media Queries */
 
