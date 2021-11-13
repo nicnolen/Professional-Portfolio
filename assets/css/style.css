@@ -186,7 +186,10 @@ header h1 {
 }
 
 .secondary-project img {
-    max-width: 20%;
+    max-width: 40%;
+    display: flex;
+    flex: 33.33%;
+    padding: 5px;
 }
 
 .secondary-info {
@@ -202,9 +205,32 @@ header h1 {
 }
 
 .secondary-info h3 {
-    font-size: 1vw;
+    font-size: 2vw;
 }
-/* Media Queries */
+
+.secondary-info h4 {
+    font-size: 1.0vw;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: var(--tertiary-color);
+    font-size: 20px;
+    margin: 10px 50px 20px 50px;
+}
+
+.contact-info a {
+    color: rgba(234, 106, 71, 0.80);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.contact-info a:hover {
+    color: #b3c100;
+}
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
