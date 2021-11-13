@@ -8,14 +8,26 @@
 /* General Styles */
 /* colors for the page */
 :root {
-    --primary-color: #7ef2ff;
+    --primary-color: #0091d5;
     --secondary-color: #474747;
-    --tertiary-color: rgb(255, 0, 0);
+    --tertiary-color: #ea6a47;
 }
 
-/* Body Color */
 body {
     background-color: var(--primary-color);
+}
+
+.section-title {
+    color: #dbae58;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding: 20px 20px 10px 20px;
+    margin: 10px;
+    border-bottom: 3px solid var(--secondary-color);
+    text-align: center;
 }
 
 /* SiteWide Styles */
@@ -25,15 +37,16 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     background-color: var(--secondary-color);
 } /* Makes the header and nav (block elements) inline elements and spaces them apart equally */
 
 /* Style My Name */
 header h1 {
     background-color: var(--primary-color);
-    color: rgba(255, 0, 0, 0.73);
+    color: rgba(234, 106, 71, 0.80);
     padding: 10px;
+    font-size: 40px;
 }
 
 /* Style the Navigation Links */
@@ -51,15 +64,18 @@ header h1 {
 }
 
 .nav-links li a {
-    color: var(--tertiary-color);
+    color: rgba(234, 106, 71, 0.80);
     text-decoration: none;
-    font-weight: lighter;
+    font-size: 13px;
 }
 
 .nav-links li a:hover {
-    color: rgb(33, 165, 33);
+    color: #b3c100;
 }
 /* Utility Classes */
+.flex-row {
+    display: flex;
+}
 
 /* Specific Classes */
 /* Style the Hero */ 
@@ -83,7 +99,7 @@ header h1 {
 }
 
 .hero-subtitle h2 {
-    background-color: var(--tertiary-color);
+    background-color: rgb(255, 0, 0);
     color: var(--secondary-color);
     text-align: right;
     display: flex;
@@ -98,7 +114,36 @@ header h1 {
     height: 20vw;
 }
 
-/* Style the Projects */
+/* Style the About Me Section */
+.about-intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    color: rgba(234, 106, 71, 0.81);
+    text-align: center;
+    text-align: center;
+    margin: 0 auto 50px auto;
+    width: 50%;
+    font-size: 40px;
+    border-bottom: 3px solid #dbae58;
+    
+}
+.about-info {
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 20px 100px 20px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Style the Work Section */
 /* Main Project */
 .primary-project {
     position: relative;
@@ -112,7 +157,6 @@ header h1 {
 
 .primary-project img {
     max-width: 100%;
-    max-height: 30vw;
 }
 
 .primary-info {
