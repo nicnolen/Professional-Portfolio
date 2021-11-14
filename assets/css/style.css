@@ -23,11 +23,11 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
-    padding: 20px 20px 10px 20px;
+    font-size: 30px;
     margin: 10px;
-    border-bottom: 3px solid var(--secondary-color);
     text-align: center;
+    line-height: 1.5;
+    flex: 0 100%;
 }
 
 /* SiteWide Styles */
@@ -36,9 +36,10 @@ header {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
     background-color: var(--secondary-color);
+    padding-bottom: 0;
 } /* Makes the header and nav (block elements) inline elements and spaces them apart equally */
 
 /* Style My Name */
@@ -47,6 +48,7 @@ header h1 {
     color: rgba(234, 106, 71, 0.80);
     padding: 10px;
     font-size: 40px;
+    flex: 0 100%;
 }
 
 /* Style the Navigation Links */
@@ -59,14 +61,14 @@ header h1 {
 }
 
 .nav-links li {
+    background-color: #dbae58;
     padding: 10px;
-    background-color: var(--primary-color);
 }
 
 .nav-links li a {
     color: rgba(234, 106, 71, 0.80);
     text-decoration: none;
-    font-size: 13px;
+    font-size: 3vw;
 }
 
 .nav-links li a:hover {
@@ -92,9 +94,12 @@ header h1 {
 
 .hero-subtitle {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: flex-end;
     flex-wrap: wrap;
+    flex: 0 3%;
     position: absolute;
+    font-size: 1.9vw;
     bottom: 10px;
     right: 10px;
     background-color: rgb(255, 0, 0);
@@ -118,20 +123,23 @@ header h1 {
     text-align: center;
     text-align: center;
     margin: 0 auto 50px auto;
+    margin-bottom: 5vw;
     width: 50%;
-    font-size: 40px;
-    border-bottom: 3px solid #dbae58;
+    font-size: 20px;
+    flex: 0 100%;
     
 }
+
 .about-info {
     color: #000000;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     margin: 0 20px 100px 20px;
+    margin-bottom: 5vw;
     width: 100%;
     text-align: center;
     flex-direction: column;
@@ -166,11 +174,11 @@ header h1 {
 }
 
 .primary-info h3 {
-    font-size: 2.4vw;
+    font-size: 4.0vw;
 }
 
 .primary-info h4 {
-    font-size: 1vw;
+    font-size: 2.0vw;
 }
 
 
@@ -213,113 +221,253 @@ header h1 {
 }
 
 .contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
     color: var(--tertiary-color);
     font-size: 20px;
-    margin: 10px 50px 20px 50px;
+    justify-content: center;
+    align-content: center; 
+    text-align: center;
+    line-height: 3.0;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
 }
 
 .contact-info a {
     color: rgba(234, 106, 71, 0.80);
     text-decoration: none;
     font-size: 20px;
+    margin: 20px;
+    flex: 1 100%;
 }
 
 .contact-info a:hover {
     color: #b3c100;
 }
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
-    header {
-        padding-bottom: 0;
-    }
+/* MEDIA QUERY FOR MOBILE PHONES AND LARGER */
+@media screen and (min-width: 575px) {
+    
+}
 
-    header h1 {
+/* MEDIA QUERY FOR TABLETS AND LARGER */
+@media screen and (min-width: 768px) {
+
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND LARGER */
+@media screen and (min-width: 980px) {
+    .section-title {
+        color: #dbae58;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        padding: 20px 20px 10px 20px;
+        margin: 10px;
+        border-bottom: 3px solid var(--secondary-color);
         text-align: center;
     }
-
-
-
-}
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
-
-}
-
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
+    
+    /* SiteWide Styles */
+    /* Style the Header */
     header {
-        padding-bottom: 0;
-    }
-
-    header h1 {
-        flex: 0 100%; 
-    }
-
-    .nav-lengths li a {
-        font-size: 3vw;
-    }
-
-    .hero-subtitle {
-        flex: 0 3%;
-        justify-content: flex-end;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: flex-end;
-        font-size: 1.9vw;
+        background-color: var(--secondary-color);
+    } /* Makes the header and nav (block elements) inline elements and spaces them apart equally */
+    
+    /* Style My Name */
+    header h1 {
+        background-color: var(--primary-color);
+        color: rgba(234, 106, 71, 0.80);
+        padding: 10px;
+        font-size: 40px;
     }
-    .section-title {
-        flex: 0 100%;
-        font-size: 30px;
-        padding: 0;
-        border: none;
-        line-height: 1.5;
+    
+    /* Style the Navigation Links */
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+    }
+    
+    .nav-links li {
+        padding: 10px;
+        background-color: var(--primary-color);
+    }
+    
+    .nav-links li a {
+        color: rgba(234, 106, 71, 0.80);
+        text-decoration: none;
+        font-size: 13px;
+    }
+    
+    .nav-links li a:hover {
+        color: #b3c100;
+    }
+    /* Utility Classes */
+    .flex-row {
+        display: flex;
+    }
+    
+    /* Specific Classes */
+    /* Style the Hero */ 
+    .hero {
+        background-image: url(../images/bg-img.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        position: relative;
     }
-
+    
+    .hero-subtitle {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: rgb(255, 0, 0);
+        color: var(--secondary-color);
+    }
+    
+    .hero img {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 20vw;
+    }
+    
+    /* Style the About Me Section */
     .about-intro {
-        flex: 0 100%;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        font-size: 20px;
-        border: none;
-        margin-bottom: 5vw;
+        align-content: center;
+        color: rgba(234, 106, 71, 0.81);
+        text-align: center;
+        text-align: center;
+        margin: 0 auto 50px auto;
+        width: 50%;
+        font-size: 40px;
+        border-bottom: 3px solid #dbae58;
+        
     }
-
     .about-info {
-        font-size: 15px;
-        margin-bottom: 5vw;
+        color: #000000;
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin: 0 20px 100px 20px;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
     }
-
+    
+    /* Style the Work Section */
+    /* Main Project */
+    .primary-project {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin: 0 20px 0 20px;
+        padding-bottom: 50px;
+    }
+    
+    .primary-project img {
+        max-width: 100%;
+    }
+    
+    .primary-info {
+        background-color: var(--tertiary-color);
+        color: var(--secondary-color);
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 4vw;
+    }
+    
     .primary-info h3 {
-        font-size: 4.0vw;
+        font-size: 2.4vw;
     }
-
+    
     .primary-info h4 {
-        font-size: 2.0vw;
+        font-size: 1vw;
     }
-
+    
+    
+    /* Secondary Projects */
+    .secondary-project {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin: 0 20px 0 20px;
+        padding-bottom: 50px;
+    }
+    
+    .secondary-project img {
+        max-width: 40%;
+        display: flex;
+        flex: 33.33%;
+        padding: 5px;
+    }
+    
+    .secondary-info {
+        background-color: var(--tertiary-color);
+        color: var(--secondary-color);
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        min-height: 2vw;
+    }
+    
     .secondary-info h3 {
-        font-size: 2.0vw;
+        font-size: 2vw;
     }
-
+    
     .secondary-info h4 {
         font-size: 1.0vw;
     }
-
+    
     .contact-info {
+        color: var(--tertiary-color);
+        font-size: 20px;
         justify-content: center;
         align-content: center; 
-        margin-bottom: 2vw;
         text-align: center;
         line-height: 3.0;
-    }
-
-    .contact-info a {
-        font-size: 20px;
-        margin: 20px;
-        flex: 1 100%;
+        margin-left: 2vw;
     }
     
+    .contact-info a {
+        color: rgba(234, 106, 71, 0.80);
+        text-decoration: none;
+        font-size: 20px;
+        margin: 3vw;
+    }
+    
+    .contact-info a:hover {
+        color: #b3c100;
+    }
 }
