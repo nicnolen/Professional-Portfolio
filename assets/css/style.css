@@ -244,8 +244,20 @@ header h1 {
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND LARGER */
-@media screen and (min-width: 575px) {
-    
+@media screen and (min-width: 562px) {
+    header h1 {
+        justify-content: center;
+    }
+    .nav-links {
+        justify-content: center;
+        margin: 10vw 0 10vw 10vw;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        width: 100%;
+        border: 1px solid var(--primary-color);
+    }
 }
 
 /* MEDIA QUERY FOR TABLETS AND LARGER */
@@ -259,13 +271,13 @@ header h1 {
         color: #dbae58;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         font-size: 40px;
         padding: 20px 20px 10px 20px;
         margin: 10px;
-        border-bottom: 3px solid var(--secondary-color);
-        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: var(--secondary-color);
     }
     
     /* SiteWide Styles */
@@ -294,11 +306,15 @@ header h1 {
         justify-content: space-between;
         align-items: center;
         list-style-type: none;
+        flex-direction: row;
+        margin: 0;
+        border: 1px solid #dbae58;
     }
     
     .nav-links li {
         padding: 10px;
         background-color: var(--primary-color);
+        width: auto;
     }
     
     .nav-links li a {
@@ -309,10 +325,6 @@ header h1 {
     
     .nav-links li a:hover {
         color: #b3c100;
-    }
-    /* Utility Classes */
-    .flex-row {
-        display: flex;
     }
     
     /* Specific Classes */
@@ -357,9 +369,7 @@ header h1 {
         text-align: center;
         margin: 0 auto 50px auto;
         width: 50%;
-        font-size: 40px;
-        border-bottom: 3px solid #dbae58;
-        
+        font-size: 40px;  
     }
     .about-info {
         color: #000000;
