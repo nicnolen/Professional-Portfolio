@@ -167,6 +167,8 @@ header h1 {
     flex-direction: column;
     justify-content: space-between;
     min-height: 4vw;
+    margin-bottom: 2vw;
+    margin-left: 2vw;
 }
 
 .primary-info h3 {
@@ -262,9 +264,27 @@ header h1 {
     }
 }
 
+.contact-info {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
 /* MEDIA QUERY FOR TABLETS AND LARGER */
 @media screen and (min-width: 768px) {
+    .contact-info {
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
 
+    .contact-info a {
+        color: rgba(234, 106, 71, 0.80);
+        text-decoration: none;
+        font-size: 20px;
+        margin: 20px;
+        flex: 1 100%;
+    }
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND LARGER */
