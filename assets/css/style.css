@@ -65,7 +65,7 @@ header h1 {
 }
 
 .nav-links li a {
-    color: rgba(234, 106, 71, 0.80);
+    color: var(--primary-color);
     text-decoration: none;
     font-size: 3vw;
 }
@@ -192,10 +192,9 @@ header h1 {
 }
 
 .secondary-project img {
-    max-width: 40%;
-    display: flex;
-    flex: 33.33%;
-    padding: 5px;
+    width: 40vw;
+    height: 30vw;
+    justify-content: space-between;
 }
 
 .secondary-info {
@@ -204,18 +203,31 @@ header h1 {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
     flex-direction: column;
-    min-height: 2vw;
+    justify-content: space-between;
+    margin-bottom: 3vw;
+    margin-left: 2vw;
 }
 
 .secondary-info h3 {
-    font-size: 2vw;
+    font-size: 4vw;
 }
 
 .secondary-info h4 {
-    font-size: 1.0vw;
+    font-size: 2vw;
+}
+
+.dummy-info {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dummy-info h3 {
+    font-size: 4vw;
+    text-align: center;
 }
 
 .contact-info {
@@ -337,6 +349,7 @@ header h1 {
         padding: 10px;
         background-color: var(--primary-color);
         width: auto;
+        border: 1px solid #dbae58;
     }
     
     .nav-links li a {
@@ -433,53 +446,46 @@ header h1 {
         flex-direction: column;
         justify-content: space-between;
         min-height: 4vw;
+        margin-bottom: 2vw;
+        margin-left: 2vw;
     }
     
     .primary-info h3 {
-        font-size: 2.4vw;
+        font-size: 5vw;
     }
     
     .primary-info h4 {
-        font-size: 1vw;
+        font-size: 2vw;
     }
     
     
     /* Secondary Projects */
-    .secondary-project {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-end;
-        justify-content: space-between;
-        margin: 0 20px 0 20px;
-        padding-bottom: 50px;
-    }
-    
     .secondary-project img {
-        max-width: 40%;
-        display: flex;
-        flex: 33.33%;
-        padding: 5px;
+        width: 40vw;
+        height: 20vw;
+        justify-content: space-between;
     }
     
-    .secondary-info {
+    
+    .secondary-info h3 {
+        font-size: 3vw;
+    }
+    
+    .secondary-info h4 {
+        font-size: 1vw;
+    }
+
+    .dummy-info {
         background-color: var(--tertiary-color);
         color: var(--secondary-color);
         position: absolute;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        min-height: 2vw;
     }
     
-    .secondary-info h3 {
-        font-size: 2vw;
-    }
-    
-    .secondary-info h4 {
-        font-size: 1.0vw;
+    .dummy-info h3 {
+        font-size: 3.5vw;
+        text-align: center;
     }
     
     .contact-info {
