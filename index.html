@@ -1,16 +1,115 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Nicholas Nolen: Professional Portfolio</title>
-
-    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+    <header>
+        <div class="flex-row">
+            <h1>Nicholas Nolen</h1>
+        </div>
+        <nav>
+            <ul class="nav-links flex-row">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <figure>
+                <img src="assets/images/Nic Professional Picture.png" alt="Nicholas Nolen's professional looking headshot" />
+            </figure>
+            <div class="flex-row">
+                <h2 class="hero-subtitle">Full Stack Web Developer</h2>
+            </div>
+        </section>
+        <hr>
+        <section id="about-me" class="about">
+            <div class="flex-row">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="flex-row">
+                <h3 class="about-intro">Hello, I'm Nicholas Nolen</h3>
+            </div>
+            <div class="flex-row">
+                <div class="about-info">
+                    <p>
+                        I'm from Austin, Texas currently taking a coding bootcamp through the University of Texas at Austin with hopes of becoming a Full-Stack Web Developer. 
+                    </p><br>
+                    <p>
+                        I love the creativity that Front-End Web Development brings as well as the logic that comes with Back-End Web Development. 
+                        I have always had a passion to learn new things as well as help people and coding achieves both of these.
+                    </p>
+                    <p><br>
+                        I enjoy the challenge of creating complex projects while gaining knowledge along the way. 
+                        The cherry on top comes knowing that my efforts helped improve user experience. 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="work">
+            <div class="flex-row">
+                <h2 class="section-title">Work</h2>
+            </div>
+
+            <section class="primary-project">
+                <a href="https://nicnolen.github.io/CodeRefactor/">
+                    <img src="./assets/images/horiseon-website.png" 
+                        alt="Horiseon Home Page">
+                </a>
+                    <div class="primary-info">
+                        <h3>Horiseon</h3>
+                        <h4>HTML/CSS</h4>
+                    </div>
+            </section>
+            
+            <div class="flex-row">
+
+                <section class="secondary-project">
+                    <a href="https://nicnolen.github.io/run-buddy/">
+                        <img src="./assets/images/run-buddy.png" alt="Run Buddy Homepage">
+                    </a>
+                        <div class="secondary-info">
+                            <h3>Run Buddy</h3>
+                            <h4>HTML/CSS</h4>
+                        </div>
+                    </a>
+                </section>
+
+                <!-- Dummy Projects (add in as more projects are done)-->
+                <section class="secondary-project">
+                    <img src="assets/images/dummy-bg.jpg" alt="More projects coming soon!">
+                    <div class="dummy-info">
+                        <h3>More Projects Coming Soon</h3>
+                    </div>
+                </section>
     
+                <section class="secondary-project">
+                    <a href="#"></a>
+                </section>
+            </div>
+        </section>
+    </main>
+    <hr>
+        <footer id="contact-me">
+            <div class="flex-row">
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            <div class="flex-row">
+                <address class="contact-info">
+                    512-496-3795 
+                    <a href="mailto:nicnolen@ymail.com" target="blank">nicnolen@ymail.com</a>
+                    <a href="https://github.com/nicnolen" target="blank">Github</a>
+                    <a href="https://www.linkedin.com/in/nicholasnolen/" target="blank">LinkedIn</a>
+                </address>
+            </div>
+    </footer>
 </body>
 </html>
