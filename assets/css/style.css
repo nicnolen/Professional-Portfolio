@@ -8,7 +8,7 @@
 /* General Styles */
 /* colors for the page */
 :root {
-    --primary-color: #0091d5;
+    --primary-color: #2864d4;
     --secondary-color: #474747;
     --tertiary-color: #ea6a47;
 }
@@ -18,7 +18,7 @@ body {
 }
 
 .section-title {
-    color: #dbae58;
+    color: #d49828;
     flex-wrap: wrap;
     flex: 0 100%;
     justify-content: center;
@@ -55,7 +55,7 @@ header h1 {
 }
 
 .nav-links li {
-    background-color: #dbae58;
+    background-color: #d49828;
     padding: 10px;
     border: 2px solid #d2042d;
 }
