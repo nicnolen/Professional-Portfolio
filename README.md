@@ -9,6 +9,7 @@ The purpose of this website is to make an easy to access website that employeers
 
 ## Installation
 There is no installation required for this website. Simply clink on this link below and you will be taken directly to the website!  
+
 Link: http://nicnolen.github.io/Professional-Portfolio/  
 
 When you click on the link, you should see a webpage similar to the one below.  
