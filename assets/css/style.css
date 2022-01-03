@@ -14,7 +14,7 @@
   --red: #d2042d;
   --dark-orange: rgba(234, 106, 71, 0.8);
   --gold: #d49828;
-  --lime-green: #b3c100;
+  --lime-green: #b3c100; 
 }
 
 body {
@@ -147,14 +147,12 @@ header h1 {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  justify-content: center;
   margin: 0 20px 0 20px;
   padding-bottom: 50px;
 }
 
 .primary-project img {
   max-width: 100%;
-  height: 40vw;
 }
 
 .primary-info {
@@ -167,8 +165,8 @@ header h1 {
   flex-direction: column;
   justify-content: space-between;
   min-height: 4vw;
-  margin-bottom: 2vw;
-  margin-left: 2vw;
+  margin-bottom: 10vw;
+  margin-left: 3vw;
 }
 
 .primary-info h3 {
