@@ -213,19 +213,6 @@ header h1 {
   font-size: 1.5vw;
 }
 
-.dummy-info {
-  background-color: var(--orange);
-  color: var(--gray);
-  position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.dummy-info h3 {
-  font-size: 3.5vw;
-  text-align: center;
-}
-
 .contact-info {
   color: var(--orange);
   font-size: 20px;
