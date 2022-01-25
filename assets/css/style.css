@@ -14,7 +14,7 @@
   --red: #d2042d;
   --dark-orange: rgba(234, 106, 71, 0.8);
   --gold: #d49828;
-  --lime-green: #b3c100; 
+  --lime-green: #b3c100;
 }
 
 body {
@@ -140,6 +140,13 @@ header h1 {
   flex-direction: column;
 }
 
+.technical-skills {
+  color: var(--red);
+}
+
+.skills {
+  color: var(--orange);
+}
 /* Style the Work Section */
 /* Main Project */
 .primary-project {
