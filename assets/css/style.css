@@ -159,6 +159,15 @@ header h1 {
   background-color: var(--gold);
 }
 /* Style the Work Section */
+/* Instructions */
+.project-instructions {
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5vh;
+  color: var(--red);
+}
+
 /* Main Project */
 .primary-project {
   position: relative;
@@ -185,6 +194,7 @@ header h1 {
   min-height: 4vw;
   margin-bottom: 10vw;
   margin-left: 3vw;
+  text-decoration: none;
 }
 
 .primary-info h3 {
@@ -221,6 +231,7 @@ header h1 {
   justify-content: space-between;
   margin-bottom: 3vw;
   margin-left: 2vw;
+  text-decoration: none;
 }
 
 .secondary-info h3 {
