@@ -15,6 +15,7 @@
   --dark-orange: rgba(234, 106, 71, 0.8);
   --gold: #d49828;
   --lime-green: #b3c100;
+  --black: #000000;
 }
 
 body {
@@ -75,7 +76,7 @@ header h1 {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 /* Specific Classes */
@@ -123,7 +124,6 @@ header h1 {
   margin: 0 auto 5vw auto;
   width: 50%;
   font-size: 20px;
-  flex: 0 100%;
 }
 
 .about-info {
@@ -132,20 +132,31 @@ header h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+  align-content: flex-start;
   margin: 0 20px 100px 20px;
-  margin-bottom: 5vw;
-  width: 100%;
+  width: 50%;
   text-align: center;
   flex-direction: column;
 }
 
-.technical-skills {
-  color: var(--red);
+.skills-title {
+  color: var(--dark-orange);
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
 }
 
 .skills {
-  color: var(--orange);
+  color: var(--black);
+  font-weight: bold;
+  font-size: 20px;
+  flex-direction: column;
+}
+
+.skill {
+  text-align: center;
+  list-style-type: none;
+  background-color: var(--gold);
 }
 /* Style the Work Section */
 /* Main Project */
