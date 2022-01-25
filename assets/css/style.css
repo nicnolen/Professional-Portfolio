@@ -168,6 +168,9 @@ header h1 {
   color: var(--red);
 }
 
+.project-description {
+  text-align: center;
+}
 /* Main Project */
 .primary-project {
   position: relative;
@@ -192,9 +195,10 @@ header h1 {
   flex-direction: column;
   justify-content: space-between;
   min-height: 4vw;
-  margin-bottom: 10vw;
-  margin-left: 3vw;
+  margin-bottom: 0;
+  margin-left: 0;
   text-decoration: none;
+  opacity: 0.95;
 }
 
 .primary-info h3 {
@@ -229,9 +233,11 @@ header h1 {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 3vw;
-  margin-left: 2vw;
+  margin-bottom: 0;
+  margin-left: 0;
   text-decoration: none;
+  text-align: center;
+  opacity: 0.93;
 }
 
 .secondary-info h3 {
