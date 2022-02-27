@@ -157,6 +157,7 @@ header h1 {
   text-align: center;
   list-style-type: none;
   background-color: var(--gold);
+  border: 2px solid var(--black);
 }
 /* Style the Work Section */
 /* Instructions */
