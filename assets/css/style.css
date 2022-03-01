@@ -151,6 +151,7 @@ header h1 {
   font-weight: bold;
   font-size: 20px;
   flex-direction: column;
+  margin-bottom: 2vh;
 }
 
 .skill {
@@ -158,6 +159,7 @@ header h1 {
   list-style-type: none;
   background-color: var(--gold);
   border: 2px solid var(--black);
+  margin-bottom: .3vh;
 }
 /* Style the Work Section */
 /* Instructions */
